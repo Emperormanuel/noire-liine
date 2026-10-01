@@ -6,3 +6,5 @@ node_modules
 picss
 picinspirator2.avif
 picinspirator.webp
+.vercel
+.env*

@@ -1,4 +1,5 @@
 import './globals.css';
+import Link from 'next/link';
 import { DM_Sans } from 'next/font/google';
 import { CartProvider } from '@/lib/cart';
 import { SITE } from '@/lib/site';
@@ -16,6 +17,10 @@ export default function RootLayout({ children }) {
           <div className="shell">
             <Header />
             <main>{children}</main>
+            <footer className="footer">
+              <span>© {new Date().getFullYear()} {SITE.name}</span>
+              <Link href="/privacy">Privacy Policy</Link>
+            </footer>
           </div>
         </CartProvider>
       </body>
